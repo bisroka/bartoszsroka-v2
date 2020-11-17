@@ -1,0 +1,370 @@
+@font-face {
+  font-family: lcd;
+  src: url(../lcd-font-master/otf/LCD14.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.preloader {
+  background-color: #000;
+  opacity: 1;
+  color: green;
+  font-size: 30px;
+}
+
+html {
+  font-size: 12px;
+}
+
+@media (min-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 400px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  background-color: transparent;
+  font-family: "Roboto Mono";
+  color: white;
+  overflow-x: hidden;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-color: #000;
+  color: green;
+  font-family: lcd;
+}
+
+header .txt {
+  position: absolute;
+  margin-left: 3vh;
+  top: 25vh;
+}
+
+@media (min-width: 1000px) {
+  header .txt {
+    font-size: 48px;
+  }
+}
+
+header .spnCursor {
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .spnCursor.active {
+  opacity: 1;
+}
+
+header .arrow--down {
+  position: absolute;
+  bottom: 15vh;
+  left: 50vw;
+}
+
+header .fa-chevron-down {
+  opacity: 0;
+  display: block;
+}
+
+header .fa-chevron-down.active {
+  opacity: 1;
+}
+
+section {
+  background-color: #333333;
+}
+
+.about {
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  margin: 5vh 0;
+}
+
+.about h1 {
+  font-size: 7vh;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5vh;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__container img {
+  height: 30vh;
+}
+
+@media (min-width: 1000px) {
+  .about__container img {
+    height: 50vh;
+  }
+}
+
+.about__container p {
+  margin: 3vh;
+}
+
+@media (min-width: 1000px) {
+  .about__container p {
+    max-width: 50vw;
+  }
+}
+
+.projects {
+  background-color: #181414;
+  padding: 5vh;
+  text-align: center;
+}
+
+.projects h1 {
+  font-size: 7vh;
+}
+
+.projects .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5vh 0;
+}
+
+.projects article {
+  margin: 2vh;
+  position: relative;
+  color: black;
+}
+
+.projects article img {
+  border: 1px solid 4d4d4d;
+  height: 25vh;
+  border-radius: 10px;
+}
+
+@media (min-width: 1000px) {
+  .projects article img {
+    height: 28vh;
+  }
+}
+
+.projects article div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25vh;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid 4d4d4d;
+  border-radius: 10px;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (min-width: 1000px) {
+  .projects article div {
+    height: 28vh;
+  }
+}
+
+.projects article div h3 {
+  margin-top: 1vh;
+}
+
+.projects article div h4 {
+  font-weight: normal;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.projects article div button {
+  padding: 1vh 3vh;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #4d4d4d;
+}
+
+@media (min-width: 1000px) {
+  .projects article div button {
+    padding: 1.5vh 5vh;
+    font-size: 16px;
+  }
+}
+
+.projects article div button:hover {
+  background-color: #857f7f;
+  border: 1px solid #ccc;
+}
+
+.projects article div a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto Mono";
+  padding: 1vh;
+}
+
+.projects article div :nth-child(3) {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+}
+
+.projects article div :nth-child(4) {
+  position: absolute;
+  top: 70%;
+  right: 15%;
+}
+
+.projects article div #taniprad__btn {
+  top: 70%;
+  left: 35%;
+}
+
+.projects article .balloons__props {
+  background-color: #00bffe;
+}
+
+.projects article .kolofortuny__props {
+  background-color: #88fefe;
+}
+
+.projects article .pogoda__props {
+  background-color: #8ed0e6;
+}
+
+.projects article .stoper__props {
+  background-color: #cfd0e4;
+}
+
+.projects article .todoapp__props {
+  background-color: #ceaf9d;
+}
+
+.projects article .taniprad__props {
+  background-color: #424280;
+}
+
+.contact {
+  position: relative;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.contact h1 {
+  font-size: 6vh;
+}
+
+.contact .contact__items {
+  display: block;
+  padding-top: 5vh;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.contact .contact__items div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3vh;
+}
+
+.contact .contact__items div a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact .contact__items div a p {
+  margin-left: 2vh;
+}
+
+.contact .contact__items div a :hover {
+  color: green;
+}
+
+.contact .arrow--up {
+  position: absolute;
+  bottom: 10vh;
+  right: 10vw;
+}
+
+.contact .arrow--up:hover {
+  color: green;
+}
+
+.contact .fa-chevron-up {
+  opacity: 0;
+  display: block;
+}
+
+.contact .fa-chevron-up.active {
+  opacity: 1;
+}
+
+.footer {
+  background-color: #000;
+  text-align: center;
+  padding: 2.5vh;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
